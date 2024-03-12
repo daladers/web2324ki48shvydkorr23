@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row flex-column text-center"></div>
+            <div class="col-12">
+                <h1 class="bg-light">Roman Shvydko</h1>
+                <p class="bg-light">4th year student of Lviv Polytechnic National University</p>
+            </div>
+        </div>
+        <div class="row flex-column text-center"></div>
+            <div class="col-12 button-container">
+                <button type="button" class="btn btn-warning mx-auto" onclick="location.href='#aboutMe'">About Me</button>
+                <button type="button" class="btn btn-warning mx-auto" onclick="location.href='#aboutProject'">About Project</button>
+                <button type="button" class="btn btn-info mx-auto" onclick="location.href='#contactForm'">Write me</button>
+            </div>
+        </div>
+        <div class="row flex-column text-center"></div>
+            <div class="col-12" id="aboutMe">
+                <h2 class="bg-light">About Me</h2>
+                <p class="bg-light">As a fourth-year computer engineering student at Lviv Polytechnic National University, I find myself constantly immersed in the world of technology, driven by a passion for innovation and problem-solving. Hailing from Ukraine, my journey in the field of computer engineering has been nothing short of exhilarating. From the moment I embarked on this path, I knew that I was destined to make a difference in the world of technology. With each passing year, I've honed my skills, delving deep into subjects ranging from software development to hardware design. The challenges I've encountered along the way have only served to fuel my determination, pushing me to strive for excellence in every endeavor. One of the most rewarding aspects of my journey has been the opportunity to collaborate with like-minded individuals who share my enthusiasm for technology. Whether it's working on complex projects or participating in coding competitions, I thrive in environments where creativity and intellect intersect. Outside of the classroom, I enjoy staying up-to-date with the latest advancements in technology, eagerly exploring new programming languages and emerging technologies. My curiosity knows no bounds, and I'm always eager to push the boundaries of what's possible in the world of computer engineering. Looking towards the future, I am excited to continue my journey in the field of computer engineering, armed with the knowledge and skills acquired during my time at Lviv Polytechnic National University. With each passing day, I am one step closer to realizing my dreams and making a meaningful impact in the world of technology.</p>
+                <img src="me.png" class="img-fluid rounded mx-auto d-block" alt="About Me Image">
+            </div>
+        </div>
+        <div class="row flex-column text-center"></div>
+            <div class="col-12" id="aboutProject">
+                <h2 class="bg-light">About Project</h2>
+                <p class="bg-light">The point of this course is to create a modern dynamic website business card with your personal data or information using PHP, JavaScript, HTML, CSS and MySQL. Use POST and GET methods to navigate pages or send forms to the server. Use AJAX method to load parts of the page depending on user inputs.</p>
+                <img src="IMG_5294.jpg" class="img-fluid rounded mx-auto d-block" alt="About Project Image">
+            </div>
+        </div>
+        <div class="row flex-column text-center"></div>
+            <div class="col-12">
+                <h2 class="bg-light">Write me</h2>
+                <form id="contactForm" action="submit.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control mx-auto" id="name" name="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control mx-auto" id="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control mx-auto" id="message" name="message" placeholder="Your message"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary mx-auto" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="row flex-column text-center"></div>
+            <div class="col-12 bg-light" id="response"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
